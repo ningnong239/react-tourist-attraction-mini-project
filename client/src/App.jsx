@@ -16,17 +16,24 @@ function App() {
   console.log("filteredPlaces:", filteredPlaces); // Debug log
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      {/* Header */}
-      <h1 className="text-3xl font-bold text-center text-sky-600 mb-6">
-        เที่ยวไหนดี
-      </h1>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <div className="max-w-6xl mx-auto p-6">
+        {/* Header */}
+        <div className="text-center mb-10 pt-8">
+          <h1 className="text-7xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4 animate-fade-in">
+            เที่ยวไหนดี
+          </h1>
+          <p className="text-gray-600 text-2xl">ค้นพบสถานที่ท่องเที่ยวสุดพิเศษในประเทศไทย</p>
+        </div>
 
-      {/* Search */}
-      <SearchBar setQuery={setQuery} />
+        {/* Search */}
+        <div className="mb-12">
+          <SearchBar setQuery={setQuery} />
+        </div>
 
-      {/* List */}
-      <TouristList places={filteredPlaces} />
+        {/* List */}
+        <TouristList places={filteredPlaces} />
+      </div>
     </div>
   );
 }

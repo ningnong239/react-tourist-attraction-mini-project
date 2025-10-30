@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "build": "cd client && npm install && npm run build",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm start"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "tailwindcss": "^4.1.12"
