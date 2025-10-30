@@ -23,7 +23,7 @@ function App() {
           <h1 className="text-7xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4 animate-fade-in">
             เที่ยวไหนดี
           </h1>
-          <p className="text-gray-600 text-2xl">ค้นพบสถานที่ท่องเที่ยวสุดพิเศษในประเทศไทย</p>
+          <p className="text-gray-600 text-2xl">ค้นพบสถานที่ท่องเที่ยวสุดพิเศษ</p>
         </div>
 
         {/* Search */}
