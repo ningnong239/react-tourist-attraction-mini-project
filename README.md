@@ -6,28 +6,32 @@
 
 ## การติดตั้งและรันโปรเจค
 
+**หมายเหตุ:** คำสั่งทั้งหมดนี้เริ่มต้นจากโฟลเดอร์ root ของโปรเจค (`react-tourist-attraction-mini-project`)
+
 ### ขั้นตอนที่ 1: ติดตั้ง Dependencies สำหรับ Client
 ```bash
 cd client
 npm install
+cd ..
 ```
 
 ### ขั้นตอนที่ 2: ติดตั้ง Dependencies สำหรับ Server
 ```bash
-cd server
+cd ..
 npm install
+
 ```
 
 ### ขั้นตอนที่ 3: รัน Server
 ```bash
-cd server
+
 npm start
 ```
 Server จะรันที่: `http://localhost:4001`
 
 ### ขั้นตอนที่ 4: รัน Client (ใน Terminal ใหม่)
 ```bash
-cd client
+cd ../client
 npm run dev
 ```
 Client จะรันที่: `http://localhost:5173`
